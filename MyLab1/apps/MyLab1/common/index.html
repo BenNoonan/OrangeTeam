@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+    		<meta charset="UTF-8">
+    		<title>MyLab1</title>
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    		<!--
+    			<link rel="shortcut icon" href="images/favicon.png">
+    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+    		-->
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile.external-png-1.4.3.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile.structure-1.4.3.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile.inline-svg-1.4.3.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile.inline-png-1.4.3.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile-1.4.3.min.css" rel="stylesheet">
+    		<link href="jqueryMobile/demos/css/themes/default/jquery.mobile.theme-1.4.3.min.css" rel="stylesheet">
+    		<link rel="stylesheet" href="css/main.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.external-png-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.icons-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.inline-png-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.inline-svg-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.4.3.min.css">
+    		<link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.4.3.min.css">
+    		<script>window.$ = window.jQuery = WLJQ;</script>
+    		<script src="jqueryMobile/demos/js/jquery.js"></script>
+    		<script src="jqueryMobile/demos/js/jquery.mobile-1.4.3.js"></script>
+    		<script src="jqueryMobile/jquery.js"></script>
+    		<script src="jqueryMobile/jquery.min.js"></script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.3.js"></script>
+    		<script src="jqueryMobile/jquery.mobile-1.4.3.min.js"></script>
+    	</head>
+    	<body style="display: none;">
+    		<div data-role="page" id="homePage">
+		<div data-role="header" id="header" data-position="fixed">
+		<h3>My Memories</h3>	
+		</div>
+		<div data-role="content" style="padding: 45px">
+    				<!--application UI goes here-->
+    				<!-- Hello Worklight-->
+
+			<a href="#listPage" data-role="button" id="listBtn" data-theme="d">My Memories</a>
+			<a href="#cameraPage" data-role="button" id="addMemBtn" data-theme="d">Add Memory</a>
+		</div>
+		</div>
+	<div data-role="page" id="cameraPage">
+		<div data-role="header" id="header0" data-position="fixed">
+			<a href="#homePage" data-role="button" id="cancelPicBtn" data-icon="delete">Cancel</a>
+			<h3>Add Memory</h3>
+			<a href="#" data-role="button" id="savePicBtn" data-icon="check">Save</a>
+		</div>
+		<div data-role="content" style="padding: 15px">
+			<label for="picMemoryTxt">Title:</label>
+			<input type="text" name="picMemoryTxt" id="picMemoryTxt">
+			<label for="picDetailTxt">Description:</label>
+			<textarea name="picDetailTxt" id="picDetailTxt"></textarea>
+			<a href="#" data-role="button" id="button">Capture Picture</a>
+			<div class="capturedImage" id="capturedImage">
+			<img id='captareImageImg' src='images/camera.png' height='200px' width='200px' style='display:block'>
+			</div>
+		</div>
+	</div>
+	<script src="js/initOptions.js"></script>
+    		<script src="js/main.js"></script>
+    		<script src="js/messages.js"></script>
+    	</body>
+</html>
